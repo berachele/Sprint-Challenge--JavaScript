@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    forEach does not return a new array, where map does. forEach's return statement is optional and must iterate through every item in array without stopping, while map must have a return keyword and it converts data without manipulating the original array
+
 2. What is the difference between a function and a method?
+
+    a method is a function iside of an object..that's pretty much it
 
 3. What is closure?
 
+    Closure is where you have functions inside of functions and those variables that are created inside parent functions will be inherited and recognized in child functions--this makes it easier for things to keep track of instead of remembering scope rules
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Global/Window: Rule you want to avoid--basically happens when 'this' isn't being pointed anywhere, it will point to the entire window--which is A LOT of code! We can use the strict method to avoid this, to return undefined instead.
+    2. Implicit: when you are invoking that function with 'this' in it. 'This' is referring to whatever is to the left of the dot.
+    3. 'New' Binding: uses the 'new' keyword. This is where constructo functions and prototypes come in for parent and child functions. This allows us to also use the same functions for multpiple uses to keep our code DRY
+    4. Explicit: this is where call, apply, and bind methods come into place. We explicitly use them outside the code to bind variables so that we can use their functions elsewhere (parent-child functions)
+
 5. Why do we need super() in an extended class?
+    yo uneed super() so that the child knows that it is being binded to the parent function -- in a normal constructor function, you would need to separately bind the parent and child inside the function using call method, then making child aware it's binded to parent with bind method
+
 
 ## Project Set up
 
