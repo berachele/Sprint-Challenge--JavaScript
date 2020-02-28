@@ -45,9 +45,12 @@ console.log(dino2.length);
 console.log(dino1.period);
 
 
-// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-dino1.roar
-console.log();
+// Create a new roar method **MEANS FUNCTION** for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
+
+dino1.roar = function(){
+  return "RAWERSRARARWERSARARARRRR";
+}
+console.log(dino1.roar());
 
 
 // ==== Arrays ====
