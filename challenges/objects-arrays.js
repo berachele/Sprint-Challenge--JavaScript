@@ -91,10 +91,20 @@ graduates.filter(function(info){
 })
 console.log(contactInfo);
 
-/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
+/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of OBJECTS. Log the result. */
 const unisWithUni = [];
+if(graduates.includes('Uni')){
+  return graduates;
+}
 console.log(unisWithUni);
-
+//HAVE NOT GOTTEN YET, MOVE ON --SO FAR IT RETURNS AN EMPTY ARRAY--TRIED DOING .PUSH AND DIDNT WORK
+// const unisWithUni = [];
+// graduates.filter(function(schools){
+//   if(graduates.includes('Uni')){
+//      return unisWithUni.push(schools.graduates);
+//      }
+// })
+// console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
 
