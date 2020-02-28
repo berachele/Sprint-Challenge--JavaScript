@@ -95,7 +95,7 @@ console.log(contactInfo);
 const unisWithUni = [];
 graduates.map(function(word){
   if(word.university.includes("Uni")){
-    return unisWithUni.push(word.university);
+    return unisWithUni.push(word);
   }
 })
 
